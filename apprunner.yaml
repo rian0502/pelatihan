@@ -7,6 +7,5 @@ build:
 run:
   command: ./startup.sh
   network:
-    ports:
-      port: 80
-      protocol: APP_PORT
+     port: 80
+     env: APP_POR
