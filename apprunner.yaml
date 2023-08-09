@@ -4,10 +4,9 @@ build:
   commands:
     build:
       - chmod +x startup.sh
-
 run:
-command: ./startup.sh
-network:
-  ports:
-    port: 80
-    protocol: APP_PORT
+  command: ./startup.sh
+  network:
+    ports:
+      port: 80
+      protocol: APP_PORT
