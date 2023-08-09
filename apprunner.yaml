@@ -3,10 +3,11 @@ runtime: php81
 build:
   commands:
     build:
-      - cmod +x startup.sh
+      - chmod +x startup.sh
+
 run:
 command: ./startup.sh
 network:
   ports:
     port: 80
-    protocol: APP_POR
+    protocol: APP_PORT
