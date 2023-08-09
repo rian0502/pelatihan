@@ -4,5 +4,5 @@ trap exit SIGCHLD
 # Start nginx
 nginx -g 'daemon off;' &
 # start php-fpm
-php-fpm -F &
+php-fpm8.1 -F &
 wait
