@@ -1,13 +1,16 @@
 <?php
 
 
-function optimasi($a, $b, $n){
-    return ($a+$b) * $n/2;
+function kedua($value){
+    return ($value + 1) * $value/2;
 }
-//hitung big o fungsi di atas
-
-
-
+function pertama($value){
+    $sum = 0;
+    for ($i=1; $i <= $value; $i++) {
+        $sum += $i;
+    }
+    return $sum;
+}
 
 ?>
 
@@ -22,6 +25,7 @@ function optimasi($a, $b, $n){
     <title>Pelatihan 01</title>
 </head>
 <body>
-    <?=  optimasi(6, 1, 6); ?>
+    <h1>Fungsi pertama <?=  pertama(6); ?></h1>
+    <h1>Fungsi optimasi <?=  kedua(6); ?></h1>
 </body>
 </html>
