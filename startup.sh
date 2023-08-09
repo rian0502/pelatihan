@@ -1,6 +1,6 @@
 #!/bin/bash
 set -o monitor
-trap exit SIGINT
+trap exit SIGCHLD
 # Start nginx
 nginx -g 'daemon off;' &
 # start php-fpm
